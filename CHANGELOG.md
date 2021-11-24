@@ -27,6 +27,8 @@
 - Remove `InputBackend::EventError` associated type as it is unneeded since `dispatch_new_events` was removed.
 - `Swapchain` does not have a generic Userdata-parameter anymore, but utilizes `UserDataMap` instead
 - `GbmBufferedSurface::next_buffer` now additionally returns the age of the buffer
+- `Present::buffer` now additionally returns the age of the buffer
+- `Present` now has an explicit `submit` function
 
 ### Additions
 
